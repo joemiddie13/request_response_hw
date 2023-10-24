@@ -27,7 +27,15 @@ def favorite_dessert(users_dessert):
 def adjective(adjective, noun):
   return f"Yesterday, an {adjective} {noun} went to the race track. All of the fans were so excited to see an {adjective} {noun} getting suited up!"
 
-
+# Multiply Two Numbers
+@app.route('/multiply/<number1>/<number2>')
+def multiply(number1, number2):
+  if number1.isdigit() and number2.isdigit():
+    first_number = int(number1)
+    second_number = int(number2)
+    return f"{first_number} x {second_number} = {first_number * second_number}"
+  else:
+    return "Invalid inputs! Insert two numbers."
 
 
 
