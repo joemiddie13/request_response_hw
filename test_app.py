@@ -16,7 +16,7 @@
 
 import pytest
 
-from request_response_hw.app import app
+from app import app
 
 def test_index():
     """Test that the index page shows "Are you there, world? It's me, Ducky!" """
