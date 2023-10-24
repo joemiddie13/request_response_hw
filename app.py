@@ -22,6 +22,10 @@ def favorite_dessert(users_dessert):
   """Display a message to the user that changes based on their favorite dessert."""
   return f"Nice! {users_dessert} is a great choice!"
 
+# Mad Libs
+@app.route('/madlibs/<adjective>/<noun>')
+def adjective(adjective, noun):
+  return f"Yesterday, an {adjective} {noun} went to the race track. All of the fans were so excited to see an {adjective} {noun} getting suited up!"
 
 
 
