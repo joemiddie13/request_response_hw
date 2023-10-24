@@ -49,6 +49,16 @@ def sayntimes(word, n):
   else:
     return "Invalid inputs! Please try again by entering a word and then number."
 
+# Dice Game
+from random import randint
+
+@app.route('/dicegame/')
+def dicegame():
+  roll = randint(1, 6)
+  if roll == 6:
+    return f"You rolled a {roll}, and you win!"
+  else:
+    return f"You rolled a {roll}, and sorry, you lose!"
 
 
 if __name__ == '__main__':
